@@ -1,3 +1,6 @@
+# AI Disclosure
+I used AI in this assignment for debugging and structure design. I did not use AI to write or complete any components where AI use is prohibited. If AI were used for debugging or development, I am able to explain the relevant code and decisions.
+
 # US COVID-19 Smart Dashboard
 ![image](img/USCovid.jpg)
 
