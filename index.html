@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>US COVID-19 Dashboard</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/c3@0.7.20/c3.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/c3@0.7.20/c3.min.js"></script>
+</head>
+
+<body>
+  <div id="info">
+    <div id="title">
+      US COVID-19 — County Rates
+      <span><a href="#" id="resetLink">reset</a></span>
+    </div>
+
+    <div id="count" class="card">
+      <h5 id="desc">Counties in the displaying region</h5>
+      <p id="county-count">—</p>
+    </div>
+
+    <div class="card">
+      <h5 class="desc2">Total cases (centroid points in view)</h5>
+      <p id="cases-sum">—</p>
+      <h5 class="desc2">Total deaths (centroid points in view)</h5>
+      <p id="deaths-sum">—</p>
+    </div>
+
+    <div class="card">
+      <h5 class="desc2">Top 10 counties by case rate (per 1,000)</h5>
+      <div id="covid-chart"></div>
+    </div>
+
+    <div id="footer">
+      This dashboard uses a choropleth map to compare county-level COVID-19 case rates (per 1,000 people) across the U.S.
+      Pan/zoom to update the numbers and chart for the current view.
+    </div>
+  </div>
+
+  <div id="map"></div>
+  <div id="legend"></div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
